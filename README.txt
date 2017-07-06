@@ -27,12 +27,13 @@ Roman Numerals Kata
 	How to run:
 
 	Thought Process: 
-		7/6 aprox 2pm: 
+		7/6 
+		2pm: 
 			I began from the smallest numbers (1-3) and then saw my first 'edge' case 4. 
 			This is where I started thinking about how to tackle the rule "The symbols 'I', 'X', 'C', and 'M' can be repeated at most 3 times in a row".
 			Currently I am thinking of an enum approach using assignment through the enum to check for special cases such as 4 being IX...essentially 5 - 1.
 			Also plenty of name refactoring needed, leaving it as a clean up task for now.
-		aprox 3pm: 
+		3pm: 
 			realizing I need to extract out the subtractive elements i.e IX. Elsewise I will end up with a huge switch case.
 			Thinking I can add flag to my enum and and use the enum more generically so thousands, hundreds, tens, ones will have their special cases stored in different flags.
 		3:40:
@@ -45,3 +46,4 @@ Roman Numerals Kata
 			was able to solve duplication of numerals by removing the internal method to bring the while loop up to the top where i could limit the appending.
 		5:15: 
 			creating specflow test to showcase acceptance test and moq. I do realize that this is a really poor example of moq and it is being used improperly.
+			implemented microservice-esque handler to demonstrate moq, and dependcy injection with specflow.
