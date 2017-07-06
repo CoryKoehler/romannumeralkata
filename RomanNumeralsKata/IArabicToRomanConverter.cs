@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace RomanNumeralsKata
 {
-    public class ArabicToRoman
+    public interface IArabicToRomanConverter
     {
+        string ArabicToRoman(int arabicNumber);
+
     }
 }
