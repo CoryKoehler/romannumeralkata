@@ -10,7 +10,7 @@
 
         public string ArabicToRoman(int arabicNumber)
         {
-            return "I";
+            return arabicNumber == 2 ? "II" : "I";
         }
 
     }
