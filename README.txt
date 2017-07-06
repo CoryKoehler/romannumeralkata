@@ -35,5 +35,5 @@ Roman Numerals Kata
 		7/6 aprox 3pm: 
 			realizing I need to extract out the subtractive elements i.e IX. Elsewise I will end up with a huge switch case.
 			Thinking I can add flag to my enum and and use the enum more generically so thousands, hundreds, tens, ones will have their special cases stored in different flags.
-			3:10:
+			3:40:
 			realized enum wont solve many of the looping problems while handling special cases...thinking I will need to get away from using loops to clean up code.

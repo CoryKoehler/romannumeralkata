@@ -3,7 +3,7 @@
 namespace RomanNumeralsKata
 {
     [Flags]
-    public enum NumberNumeralEnum
+    public enum RomanNumeralEnum
     {
         I = 1,
         IV = 4,
@@ -11,6 +11,10 @@ namespace RomanNumeralsKata
         IX = 9,
         X = 10,
         L = 50,
-        C = 100
+        C = 100,
+        CD = 400,
+        D = 500,
+        CM = 900,
+        M = 1000
     }
 }

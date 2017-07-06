@@ -40,9 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArabicNumberEnum.cs" />
     <Compile Include="ArabicToRomanConverter.cs" />
     <Compile Include="IArabicToRomanConverter.cs" />
-    <Compile Include="NumberNumeralEnum.cs" />
+    <Compile Include="RomanNumeralEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
