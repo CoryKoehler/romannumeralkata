@@ -1,8 +1,9 @@
-﻿namespace RomanNumeralsKata
+﻿using System.Text;
+
+namespace RomanNumeralsKata
 {
     public class ArabicToRomanConverter : IArabicToRomanConverter
     {
-
         public ArabicToRomanConverter()
         {
             //constructor for later use if necessary
@@ -10,8 +11,23 @@
 
         public string ArabicToRoman(int arabicNumber)
         {
-            return arabicNumber == 2 ? "II" : "I";
+            var result = new StringBuilder();
+            switch (arabicNumber)
+            {
+                case 5:
+                    result.Append("V");
+                    break;
+                case 4:
+                    result.Append("IV");
+                    break;
+                default:
+                    for (var i = 0; i < arabicNumber; i++)
+                    {
+                        result.Append("I");
+                    }
+                    break;
+            }
+            return result.ToString();
         }
-
     }
 }

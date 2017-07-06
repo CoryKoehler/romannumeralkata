@@ -17,9 +17,9 @@ namespace RomanNumeralsKataTests
         [Test]
         public void ArabicOneToRomanOne()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(1);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(1);
 
-            Assert.That(romanNumber, Is.EqualTo("I"));
+            Assert.That(romanNumeral, Is.EqualTo("I"));
         }
 
         [Test]
@@ -28,6 +28,30 @@ namespace RomanNumeralsKataTests
             var romanNumber = _arabicToRomanConverter.ArabicToRoman(2);
 
             Assert.That(romanNumber, Is.EqualTo("II"));
+        }
+
+        [Test]
+        public void ArabicThreeToRomanThree()
+        {
+            var romanNumber = _arabicToRomanConverter.ArabicToRoman(3);
+
+            Assert.That(romanNumber, Is.EqualTo("III"));
+        }
+
+        [Test]
+        public void ArabicFourToRomanFour()
+        {
+            var romanNumber = _arabicToRomanConverter.ArabicToRoman(4);
+
+            Assert.That(romanNumber, Is.EqualTo("IV"));
+        }
+
+        [Test]
+        public void ArabicFiveToRomanFive()
+        {
+            var romanNumber = _arabicToRomanConverter.ArabicToRoman(5);
+
+            Assert.That(romanNumber, Is.EqualTo("V"));
         }
     }
 }
