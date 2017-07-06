@@ -41,4 +41,7 @@ Roman Numerals Kata
 			I'm stupid, enums are great, dont need flag unless I change away from loops - needed to make sure that array of numbers i had matched the enum. It didn't that is why i was getting stack traces...
 			currently solution working except for duplication of numerals i.e III.
 			but I really like how clean the enum casting is...not sure how performant over just having two hard coded arrays right up front...but whatever
-		4:15: was able to solve duplication of numerals by removing the internal method to bring the while loop up to the top where i could limit the appending.
+		4:15: 
+			was able to solve duplication of numerals by removing the internal method to bring the while loop up to the top where i could limit the appending.
+		5:15: 
+			creating specflow test to showcase acceptance test and moq. I do realize that this is a really poor example of moq and it is being used improperly.

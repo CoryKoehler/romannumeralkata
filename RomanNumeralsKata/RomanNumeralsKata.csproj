@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ArabicNumberEnum.cs" />
     <Compile Include="ArabicToRomanConverter.cs" />
+    <Compile Include="ConversionHandler.cs" />
     <Compile Include="IArabicToRomanConverter.cs" />
     <Compile Include="RomanNumeralEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
