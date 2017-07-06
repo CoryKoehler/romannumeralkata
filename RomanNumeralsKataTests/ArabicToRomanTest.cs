@@ -1,12 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using NUnit.Framework;
 
 namespace RomanNumeralsKataTests
 {
-    public class ArabicToRomanTest
+    [TestFixture]
+    public class ArabicToRomanTests
     {
+        [SetUp]
+        public void Setup()
+        {
+            
+        }
+
+        [Test]
+        public void ArabicToRomanTest()
+        {
+            const string arabicOne = "1";
+
+            Assert.That(arabicOne, Is.EqualTo("I"));
+        }
     }
 }
