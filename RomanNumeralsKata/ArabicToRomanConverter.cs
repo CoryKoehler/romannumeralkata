@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace RomanNumeralsKata
 {
@@ -11,26 +12,25 @@ namespace RomanNumeralsKata
 
         public string ArabicToRoman(int arabicNumber)
         {
-            var result = new StringBuilder();
-            switch (arabicNumber)
+            var builder = new StringBuilder();
+            var remaining = arabicNumber;
+            remaining = AppendRomanNumerals(remaining, 9, NumberNumeralEnum.IX, builder);
+            remaining = AppendRomanNumerals(remaining, 5, NumberNumeralEnum.V, builder);
+            remaining = AppendRomanNumerals(remaining, 4, NumberNumeralEnum.IV, builder);
+            for (var i = 0; i < remaining; i++)
             {
-                case 9:
-                    result.Append(NumberNumeralEnum.IX);
-                    break;
-                case 5:
-                    result.Append(NumberNumeralEnum.V);
-                    break;
-                case 4:
-                    result.Append(NumberNumeralEnum.IV);
-                    break;
-                default:
-                    for (var i = 0; i < arabicNumber; i++)
-                    {
-                        result.Append("I");
-                    }
-                    break;
+                builder.Append("I");
             }
-            return result.ToString();
+            return builder.ToString();
+        }
+
+        private static int AppendRomanNumerals(int arabicNumber, int value, NumberNumeralEnum romanNumeral, StringBuilder builder)
+        {
+            var result = arabicNumber;
+            if (result < value) return result;
+            builder.Append(romanNumeral);
+            result -= value;
+            return result;
         }
     }
 }

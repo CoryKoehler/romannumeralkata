@@ -1,5 +1,8 @@
-﻿namespace RomanNumeralsKata
+﻿using System;
+
+namespace RomanNumeralsKata
 {
+    [Flags]
     public enum NumberNumeralEnum
     {
         I = 1,
