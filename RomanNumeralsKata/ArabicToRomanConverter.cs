@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 
 namespace RomanNumeralsKata
@@ -15,8 +16,8 @@ namespace RomanNumeralsKata
 
         public string ArabicToRoman(int arabicNumber)
         {
-            int[] arabicNumbers = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
-            var romanNumerals = Enum.GetValues(typeof(RomanNumeralEnum)).Cast<int>().Select(x => x.ToString()).ToArray();
+            var arabicNumbers = Enum.GetValues(typeof(RomanNumeralEnum)).Cast<int>().ToArray();
+            var romanNumerals = Enum.GetNames(typeof(RomanNumeralEnum)).Select(x => x.ToString()).ToArray();
 
             var builder = new StringBuilder();
             var remaining = arabicNumber;
@@ -38,11 +39,9 @@ namespace RomanNumeralsKata
         private static int AppendRomanNumerals(int arabicNumber, int value, string romanNumeral, StringBuilder builder)
         {
             var result = arabicNumber;
-            while (result >= value)
-            {
-                builder.Append(romanNumeral);
-                result -= value;
-            }
+            if (result < value) return result;
+            builder.Append(romanNumeral);
+            result -= value;
             return result;
         }
     }
