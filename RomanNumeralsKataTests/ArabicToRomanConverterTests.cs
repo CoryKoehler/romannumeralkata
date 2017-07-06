@@ -54,6 +54,7 @@ namespace RomanNumeralsKataTests
             Assert.That(romanNumber, Is.EqualTo("V"));
         }
 
+        [Test]
         public void ArabicNineToRomanNine()
         {
             var romanNumber = _arabicToRomanConverter.ArabicToRoman(9);
@@ -61,12 +62,13 @@ namespace RomanNumeralsKataTests
             Assert.That(romanNumber, Is.EqualTo("IX"));
         }
 
-        public void ArabicNineHundredNineityToRomanNineHundredNineity()
-        {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(1990);
+        //[Test]
+        //public void ArabicNineHundredNineityToRomanNineHundredNineity()
+        //{
+        //    var romanNumber = _arabicToRomanConverter.ArabicToRoman(1990);
 
-            Assert.That(romanNumber, Is.EqualTo("MCMXC"));
-        }
+        //    Assert.That(romanNumber, Is.EqualTo("MCMXC"));
+        //}
 
         //TODO Bring this to a new test fixture that will handle any case of a roman numeral appearing more than three times in a row
         //[Test]

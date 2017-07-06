@@ -14,6 +14,9 @@ namespace RomanNumeralsKata
             var result = new StringBuilder();
             switch (arabicNumber)
             {
+                case 9:
+                    result.Append(NumberNumeralEnum.IX);
+                    break;
                 case 5:
                     result.Append(NumberNumeralEnum.V);
                     break;
