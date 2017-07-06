@@ -20,27 +20,18 @@ namespace RomanNumeralsKata
             var romanNumerals = Enum.GetNames(typeof(RomanNumeralEnum)).Select(x => x.ToString()).ToArray();
 
             var builder = new StringBuilder();
-            var remaining = arabicNumber;
 
-            for (var i = 0; i < arabicNumbers.Length; i++)
+            while (arabicNumber > 0)
             {
-                remaining = AppendRomanNumerals(remaining, arabicNumbers[i], romanNumerals[i], builder);
+                for (var i = arabicNumbers.Count() - 1; i >= 0; i--)
+                    if (arabicNumber / arabicNumbers[i] >= 1)
+                    {
+                        arabicNumber -= arabicNumbers[i];
+                        builder.Append(romanNumerals[i]);
+                        break;
+                    }
             }
-
             return builder.ToString();
-        }
-
-        private static int AppendRomanNumerals(int arabicNumber, int value, string romanNumeral, StringBuilder builder)
-        {
-            var result = arabicNumber;
-
-            while (result >= value)
-            {
-                builder.Append(romanNumeral);
-                result -= value;
-            }
-
-            return result;
         }
     }
 }
