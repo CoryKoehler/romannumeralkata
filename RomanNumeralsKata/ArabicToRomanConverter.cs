@@ -27,21 +27,19 @@ namespace RomanNumeralsKata
                 remaining = AppendRomanNumerals(remaining, arabicNumbers[i], romanNumerals[i], builder);
             }
 
-            while (remaining >= 1)
-            {
-                builder.Append("I");
-                remaining -= 1;
-            }
-
             return builder.ToString();
         }
 
         private static int AppendRomanNumerals(int arabicNumber, int value, string romanNumeral, StringBuilder builder)
         {
             var result = arabicNumber;
-            if (result < value) return result;
-            builder.Append(romanNumeral);
-            result -= value;
+
+            while (result >= value)
+            {
+                builder.Append(romanNumeral);
+                result -= value;
+            }
+
             return result;
         }
     }
