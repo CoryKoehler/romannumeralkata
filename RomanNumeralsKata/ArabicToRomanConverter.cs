@@ -15,10 +15,10 @@ namespace RomanNumeralsKata
             switch (arabicNumber)
             {
                 case 5:
-                    result.Append("V");
+                    result.Append(NumberNumeralEnum.V);
                     break;
                 case 4:
-                    result.Append("IV");
+                    result.Append(NumberNumeralEnum.IV);
                     break;
                 default:
                     for (var i = 0; i < arabicNumber; i++)
