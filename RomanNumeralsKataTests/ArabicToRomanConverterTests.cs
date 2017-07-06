@@ -15,11 +15,19 @@ namespace RomanNumeralsKataTests
         }
 
         [Test]
-        public void ArabicToRomanTest()
+        public void ArabicOneToRomanOne()
         {
             var romanNumber = _arabicToRomanConverter.ArabicToRoman(1);
 
             Assert.That(romanNumber, Is.EqualTo("I"));
+        }
+
+        [Test]
+        public void ArabicTwoToRomanTwo()
+        {
+            var romanNumber = _arabicToRomanConverter.ArabicToRoman(2);
+
+            Assert.That(romanNumber, Is.EqualTo("II"));
         }
     }
 }
