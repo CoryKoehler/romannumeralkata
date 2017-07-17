@@ -21,16 +21,31 @@ Roman Numerals Kata
 				Nunit
 				Specflow
 				MOQ
+				<package id="Castle.Core" version="4.1.0" targetFramework="net452" />
+				<package id="Moq" version="4.7.63" targetFramework="net452" />
+				<package id="NUnit" version="3.7.1" targetFramework="net452" />
+				<package id="Newtonsoft.Json" version="10.0.3" targetFramework="net452" />
+				<package id="SpecFlow" version="2.2.0" targetFramework="net452" />
+				<package id="SpecFlow.NUnit" version="2.2.0" targetFramework="net452" />
 
 	How to build:
+		open the project in visual studio and press ctl + b
 
 	How to run:
+		this doesn't run yet...waiting to implement the handler as webapi
+		should just be running the webapi class library through local or IIS then following webapp steps to run that locally which will call the api.
 
 	How to run test:
 		Command Line:
+			nunit console: nunit3-console.exe to run tests from the command line
+			nunit3-console.exe path\to\repo\bin\debug\RomanNumeralsKataTests.dll
+			for my local the command is nunit3-console.exe E:\repos\RomanNumeralsKata\RomanNumeralsKata\bin\Debug\RomanNumeralsKata.dll
+			results are saved into the TestResult.xml file by default from where you ran the cmd at
+
 		Via Visual Studio:
-			mstest:
-			resharper:
+			nunit runner: will need to download the nunit runner -> quick launch search nuget select manage package for solution, then search nunit and install NUnit3TestAdapter
+				ctl r + t (web link to extesnion https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.NUnit3TestAdapter)
+			resharper: ctl u + l whilst in visual studio once resharper is installed - you can get free trial versions for 30 days from their website.
 
 	Thought Process: 
 		7/6 
