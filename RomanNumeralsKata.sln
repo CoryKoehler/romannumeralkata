@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKataTests", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsKataAcceptanceTests", "RomanNumeralsKataAcceptanceTests\RomanNumeralsKataAcceptanceTests.csproj", "{6912A131-A1E6-4AC6-9DEC-F638D16E26B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterAPI", "ConverterAPI\ConverterAPI.csproj", "{B7232988-E0A3-43F0-AC86-DF07A64E2475}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{6912A131-A1E6-4AC6-9DEC-F638D16E26B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6912A131-A1E6-4AC6-9DEC-F638D16E26B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6912A131-A1E6-4AC6-9DEC-F638D16E26B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7232988-E0A3-43F0-AC86-DF07A64E2475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7232988-E0A3-43F0-AC86-DF07A64E2475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7232988-E0A3-43F0-AC86-DF07A64E2475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7232988-E0A3-43F0-AC86-DF07A64E2475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

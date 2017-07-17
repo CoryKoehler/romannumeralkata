@@ -9,6 +9,7 @@ namespace RomanNumeralsKataAcceptanceTests
     public class ArabicToRomanConverterSteps
     {
         private Mock<IArabicToRomanConverter> _arabicToRomanConverter;
+        private Mock<IRomanToArabicConverter> _romanToArabicConverter;
         private ConversionHandler _conversionHandler;
         private const string RomanNumeral = "CXX";
 
@@ -16,7 +17,10 @@ namespace RomanNumeralsKataAcceptanceTests
         {
             _arabicToRomanConverter = new Mock<IArabicToRomanConverter>() {CallBase = true};
             _arabicToRomanConverter.Setup(_ => _.ArabicToRoman(70)).Returns("CXX");
-            _conversionHandler = new ConversionHandler(_arabicToRomanConverter.Object);
+
+            _romanToArabicConverter = new Mock<IRomanToArabicConverter>() { CallBase = true };
+            _romanToArabicConverter.Setup(_ => _.RomanToArabic("CXX")).Returns(70);
+            _conversionHandler = new ConversionHandler(_arabicToRomanConverter.Object, _romanToArabicConverter.Object);
         }
 
         [Given(@"I have started the converter")]

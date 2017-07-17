@@ -59,3 +59,12 @@ Roman Numerals Kata
 		9:30am: 
 			Getting back into this had to review what I had already...going to add test for the conversion handler, romanToArabicConverter and implement logic for that.
 			After having good code coverage and working product will switch over to api implementation so I can call from the website. Not sure on how I am going to switch over implementations yet
+		11:50am:
+			getting back to this again after lunch. decided to get away from enum and just map the basic digits for romantoarabic implementation. just loops through each character of
+			the roman numeral string and see if the number associated via the dictionary with the numeral should be added or subtracted for the total. 
+			
+
+
+
+
+
