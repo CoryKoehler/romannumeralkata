@@ -44,8 +44,10 @@
     <Compile Include="ArabicToRomanConverter.cs" />
     <Compile Include="ConversionHandler.cs" />
     <Compile Include="IArabicToRomanConverter.cs" />
+    <Compile Include="IRomanToArabicConverter.cs" />
     <Compile Include="RomanNumeralEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RomanToArabicConverter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

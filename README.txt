@@ -20,11 +20,17 @@ Roman Numerals Kata
 			Nuget
 				Nunit
 				Specflow
-
+				MOQ
 
 	How to build:
 
 	How to run:
+
+	How to run test:
+		Command Line:
+		Via Visual Studio:
+			mstest:
+			resharper:
 
 	Thought Process: 
 		7/6 
@@ -47,3 +53,9 @@ Roman Numerals Kata
 		5:15: 
 			creating specflow test to showcase acceptance test and moq. I do realize that this is a really poor example of moq and it is being used improperly.
 			implemented microservice-esque handler to demonstrate moq, and dependcy injection with specflow.
+		6:40
+			adding another method to handler for roman to arabic converter for second part of kata
+		7/17 
+		9:30am: 
+			Getting back into this had to review what I had already...going to add test for the conversion handler, romanToArabicConverter and implement logic for that.
+			After having good code coverage and working product will switch over to api implementation so I can call from the website. Not sure on how I am going to switch over implementations yet

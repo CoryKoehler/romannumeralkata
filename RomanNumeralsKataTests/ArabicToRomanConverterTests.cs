@@ -25,60 +25,60 @@ namespace RomanNumeralsKataTests
         [Test]
         public void ArabicTwoToRomanTwo()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(2);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(2);
 
-            Assert.That(romanNumber, Is.EqualTo("II"));
+            Assert.That(romanNumeral, Is.EqualTo("II"));
         }
 
         [Test]
         public void ArabicThreeToRomanThree()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(3);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(3);
 
-            Assert.That(romanNumber, Is.EqualTo("III"));
+            Assert.That(romanNumeral, Is.EqualTo("III"));
         }
 
         [Test]
         public void ArabicFourToRomanFour()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(4);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(4);
 
-            Assert.That(romanNumber, Is.EqualTo("IV"));
+            Assert.That(romanNumeral, Is.EqualTo("IV"));
         }
 
         [Test]
         public void ArabicFiveToRomanFive()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(5);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(5);
 
-            Assert.That(romanNumber, Is.EqualTo("V"));
+            Assert.That(romanNumeral, Is.EqualTo("V"));
         }
 
         [Test]
         public void ArabicNineToRomanNine()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(9);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(9);
 
-            Assert.That(romanNumber, Is.EqualTo("IX"));
+            Assert.That(romanNumeral, Is.EqualTo("IX"));
         }
 
         [Test]
         public void ArabicNineHundredNineityToRomanNineHundredNineity()
         {
-            var romanNumber = _arabicToRomanConverter.ArabicToRoman(1990);
+            var romanNumeral = _arabicToRomanConverter.ArabicToRoman(1990);
 
-            Assert.That(romanNumber, Is.EqualTo("MCMXC"));
+            Assert.That(romanNumeral, Is.EqualTo("MCMXC"));
         }
 
         //TODO Bring this to a new test fixture that will handle any case of a roman numeral appearing more than three times in a row
         //[Test]
         //public void ThriceRepeatedRomanNumeral()
         //{
-        //    var romanNumber = _arabicToRomanConverter.ArabicToRoman(2499);
-        //    Assert.That(romanNumber, Is.EqualTo("MMCDXCIX"));
+        //    var romanNumeral = _arabicToRomanConverter.ArabicToRoman(2499);
+        //    Assert.That(romanNumeral, Is.EqualTo("MMCDXCIX"));
 
-        //    romanNumber = _arabicToRomanConverter.ArabicToRoman(3949);
-        //    Assert.That(romanNumber, Is.EqualTo("MMMCMXLIX"));
+        //    romanNumeral = _arabicToRomanConverter.ArabicToRoman(3949);
+        //    Assert.That(romanNumeral, Is.EqualTo("MMMCMXLIX"));
 
         //}
     }
